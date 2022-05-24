@@ -26,7 +26,15 @@ const result = add(number1, number2, printResult, resultPhrase);
 const person = {
   name: "Tony",
   age: 32,
-  hobbies: [],
+  hobbies: ["Sports", "Cooking"],
 };
 
+let favoriteActivities: string[];
+favoriteActivities = ["Sports"];
+
 console.log(person.name);
+
+for (const hobby of person.hobbies) {
+  console.log(hobby.toUpperCase());
+  // console.log(hobby.map()); // ERROR map is available on arrays, but not strings
+}
