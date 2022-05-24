@@ -23,7 +23,12 @@ const result = add(number1, number2, printResult, resultPhrase);
 //   name: string;
 //   age: number;
 // } = {
-const person = {
+const person: {
+  name: string;
+  age: number;
+  hobbies: string[];
+  role: [number, string]; // Tuple type
+} = {
   name: "Tony",
   age: 32,
   hobbies: ["Sports", "Cooking"],
@@ -31,7 +36,7 @@ const person = {
 };
 
 person.role.push("admin");
-person.role[1];
+person.role[1] = 10;
 
 let favoriteActivities: string[];
 favoriteActivities = ["Sports"];
