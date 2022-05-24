@@ -5,4 +5,4 @@ const x: {
 [number, string] - Tuple type
 }
 
-
+Enum: JS does not have. enum {NEW, OLD}. Automatically enumerated global constant identifiers.
