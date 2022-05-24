@@ -19,10 +19,11 @@ const resultPhrase = "Result is: ";
 
 const result = add(number1, number2, printResult, resultPhrase);
 
-const person: {
-  name: string;
-  age: number;
-} = {
+// const person: {
+//   name: string;
+//   age: number;
+// } = {
+const person = {
   name: "Tony",
   age: 32,
 };
