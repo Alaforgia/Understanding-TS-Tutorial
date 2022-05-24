@@ -27,7 +27,11 @@ const person = {
   name: "Tony",
   age: 32,
   hobbies: ["Sports", "Cooking"],
+  role: [2, "author"], // Tuple
 };
+
+person.role.push("admin");
+person.role[1];
 
 let favoriteActivities: string[];
 favoriteActivities = ["Sports"];
