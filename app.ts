@@ -26,6 +26,7 @@ const result = add(number1, number2, printResult, resultPhrase);
 const person = {
   name: "Tony",
   age: 32,
+  hobbies: [],
 };
 
 console.log(person.name);
