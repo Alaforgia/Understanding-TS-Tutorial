@@ -39,13 +39,17 @@ const result = add(number1, number2, printResult, resultPhrase);
 // const READ_ONLY = 1;
 // const AUTHOR = 2;
 
-enum Role {ADMIN, READ_ONLY, AUTHOR}
+enum Role {
+  ADMIN = "ADMIN",
+  READ_ONLY = 100,
+  AUTHOR,
+}
 
 const person = {
   name: "Tony",
   age: 32,
   hobbies: ["Sports", "Cooking"],
-  role: ADMIN,
+  role: Role.ADMIN,
 };
 
 // person.role.push("admin"); // push is an exception that is allowed in tuples
@@ -63,6 +67,6 @@ for (const hobby of person.hobbies) {
   // console.log(hobby.map()); // ERROR map is available on arrays, but not strings
 }
 
-if (person.role === ADMIN) {
-  console.log("is admin");
+if (person.role === Role.ADMIN) {
+  console.log("is author");
 }

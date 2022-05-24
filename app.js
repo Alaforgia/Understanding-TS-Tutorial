@@ -31,14 +31,20 @@ var result = add(number1, number2, printResult, resultPhrase);
 //   hobbies: ["Sports", "Cooking"],
 //   role: [2, "author"], // Tuple
 // };
-var ADMIN = 0;
-var READ_ONLY = 1;
-var AUTHOR = 2;
+// const ADMIN = 0;
+// const READ_ONLY = 1;
+// const AUTHOR = 2;
+var Role;
+(function (Role) {
+    Role[Role["ADMIN"] = 0] = "ADMIN";
+    Role[Role["READ_ONLY"] = 1] = "READ_ONLY";
+    Role[Role["AUTHOR"] = 2] = "AUTHOR";
+})(Role || (Role = {}));
 var person = {
     name: "Tony",
     age: 32,
     hobbies: ["Sports", "Cooking"],
-    role: ADMIN
+    role: Role.ADMIN
 };
 // person.role.push("admin"); // push is an exception that is allowed in tuples
 // person.role[1] = 10;
@@ -51,6 +57,6 @@ for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
     console.log(hobby.toUpperCase());
     // console.log(hobby.map()); // ERROR map is available on arrays, but not strings
 }
-if (person.role === ADMIN) {
-    console.log("is admin");
+if (person.role === Role.ADMIN) {
+    console.log("is author");
 }

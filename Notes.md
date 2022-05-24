@@ -6,3 +6,4 @@ const x: {
 }
 
 Enum: JS does not have. enum {NEW, OLD}. Automatically enumerated global constant identifiers.
+Assigns labels to numbers.
