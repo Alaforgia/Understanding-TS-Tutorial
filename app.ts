@@ -19,9 +19,12 @@ const resultPhrase = "Result is: ";
 
 const result = add(number1, number2, printResult, resultPhrase);
 
-const person = {
+const person: {
+  name: string;
+  age: number;
+} = {
   name: "Tony",
   age: 32,
 };
 
-console.log(person);
+console.log(person.name);
