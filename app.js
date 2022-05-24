@@ -23,8 +23,12 @@ var result = add(number1, number2, printResult, resultPhrase);
 var person = {
     name: "Tony",
     age: 32,
-    hobbies: ["Sports", "Cooking"]
+    hobbies: ["Sports", "Cooking"],
+    role: [2, "author"]
 };
+// person.role.push("admin"); // push is an exception that is allowed in tuples
+// person.role[1] = 10;
+// person.role = [0, "admin", "user"];
 var favoriteActivities;
 favoriteActivities = ["Sports"];
 console.log(person.name);
