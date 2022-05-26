@@ -8,4 +8,5 @@ const x: {
 Enum: JS does not have. enum {NEW, OLD}. Automatically enumerated global constant identifiers.
 Assigns labels to numbers.
 
-Any Type: * Doesn't tell typescript anything. Store any type of value, non-specific.
+Any Type: * Doesn't tell typescript anything. Store any type of value, non-specific. Any is "like" vanilla JS.
+It just allows anything to be acceptable. TS wants to be more strict, unlike JS.
