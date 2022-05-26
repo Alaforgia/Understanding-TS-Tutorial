@@ -57,7 +57,8 @@ const person = {
 
 // person.role = [0, "admin", "user"];
 
-let favoriteActivities: string[];
+// as long as any is an array, it accepts it
+let favoriteActivities: any[];
 favoriteActivities = ["Sports"];
 
 console.log(person.name);
