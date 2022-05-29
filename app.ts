@@ -3,4 +3,5 @@ function combine(input1: number, input2: number) {
   return result;
 }
 
-const combinedAges = combine(30, 2);
+const combinedAges = combine(30, 26);
+console.log(combinedAges);
