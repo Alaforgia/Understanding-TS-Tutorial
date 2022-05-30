@@ -13,4 +13,7 @@ It just allows anything to be acceptable. TS wants to be more strict, unlike JS.
 
 Union types: allows for multiple types to be applied to same parameters.
 
-Literal types: 
+Literal types: A literal is a more concrete sub-type of a collective type. What this means is that "Hello World" is a string, but a string is not "Hello World" inside the type system.
+
+There are three sets of literal types available in TypeScript today: strings, numbers, and booleans; by using literal types you can allow an exact value which a string, number, or boolean must have.
+
