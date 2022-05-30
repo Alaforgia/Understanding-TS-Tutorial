@@ -24,3 +24,4 @@ We’ve been using object types and union types by writing them directly in type
 A type alias is exactly that - a name for any type.
 
 Aliasing doesn’t actually create a new type - it creates a new name to refer to that type. Aliasing a primitive is not terribly useful, though it can be used as a form of documentation.
+
