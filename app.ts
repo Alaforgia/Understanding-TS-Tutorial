@@ -1,4 +1,5 @@
 // We can use Combinable instead of type number, but that wouldn't make to much sense in that case.
+// You can create various type aliases to reuse anywhere in your code.
 type Combinable = number | string;
 type ConversionDescriptor = "as-number" | "as-text";
 
