@@ -10,8 +10,13 @@ function printResult(num: number): void {
 
 printResult(add(5, 12));
 
-let combineValues;
+// Type Function tells JS that what the var receives has to be a function.
+// TS will accept the function printResult, but it is not a function that takes two arguments
+// Function types are created with the arrow function from JS.
+let combineValues: () => ;
 
 combineValues = add;
+combineValues = printResult;
+// combineValues = 5;
 
 console.log(combineValues(8, 8));
