@@ -28,3 +28,4 @@ Aliasing doesn’t actually create a new type - it creates a new name to refer t
 _Function Types_: Type Function tells JS that what the var receives has to be a function.
 TS will accept the function printResult, but it is not a function that takes two arguments
 Function types are created with the arrow function from JS.
+Function types allow us to describe which types of functions specifically we want to use somewhere.
