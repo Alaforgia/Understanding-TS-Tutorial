@@ -8,6 +8,11 @@ function printResult(num: number): void {
   console.log("Result: ", +num);
 }
 
+function addAndHandle(n1: number, n2: number, cb: (num: number) => void) {
+  const result = n1 + n2;
+  cb(result);
+}
+
 printResult(add(5, 12));
 
 // Type Function tells JS that what the var receives has to be a function.
