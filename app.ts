@@ -29,6 +29,8 @@ combineValues = add;
 
 console.log(combineValues(8, 8));
 
+// TS does not error if you return result. It is on purpose, since type void tells TS to ignore any result we might be returning
 addAndHandle(10, 20, (result) => {
   console.log(result);
+  // return result;
 });
