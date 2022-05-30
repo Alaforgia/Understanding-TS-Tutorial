@@ -1,4 +1,5 @@
-type Combinable = 
+// We can use Combinable instead of type number, but that wouldn't make to much sense in that case.
+type Combinable = number;
 
 function combine(input1: number | string, input2: number | string, resultConversion: "as-number" | "as-text") {
   let result;
