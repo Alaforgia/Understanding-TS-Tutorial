@@ -12,3 +12,5 @@ Any Type: \* Doesn't tell typescript anything. Store any type of value, non-spec
 It just allows anything to be acceptable. TS wants to be more strict, unlike JS.
 
 Union types: allows for multiple types to be applied to same parameters.
+
+Literal types: 
