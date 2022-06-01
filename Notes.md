@@ -33,4 +33,6 @@ Function types allow us to describe which types of functions specifically we wan
 _Type Unknown_: Tells TS that the var doesn't have a type yet, but will have one at some point. A var with type unknown cannot
 be equal or set to a var that has a more specific type like string. Unknown isn't like type Any, it is more restrictive.
 Type Unknown is the better choice over type Any. It requires more specificity, using an if check allows you circumvent the type Unknown
-to other Types.
+to other Types. Type unknown shouldn't be used all the time, but it is better than type Any.
+
+_Never Type_: 
