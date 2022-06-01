@@ -29,3 +29,6 @@ _Function Types_: Type Function tells JS that what the var receives has to be a 
 TS will accept the function printResult, but it is not a function that takes two arguments
 Function types are created with the arrow function from JS.
 Function types allow us to describe which types of functions specifically we want to use somewhere.
+
+_Type Unknown_: Tells TS that the var doesn't have a type yet, but will have one at some point. A var with type unknown cannot
+be equal or set to a var that has a more specific type like string. Unknown isn't like type Any, it is more restrictive.
