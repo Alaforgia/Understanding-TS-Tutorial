@@ -35,4 +35,4 @@ be equal or set to a var that has a more specific type like string. Unknown isn'
 Type Unknown is the better choice over type Any. It requires more specificity, using an if check allows you circumvent the type Unknown
 to other Types. Type unknown shouldn't be used all the time, but it is better than type Any.
 
-_Never Type_: 
+_Never Type_: Never is "clearer" than void, it is intended to never return something, where as void means that it doesn't have a return type.

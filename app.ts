@@ -8,8 +8,10 @@ if (typeof userInput === "string") {
   userName = userInput;
 }
 
-function generateError(message: string, code: number) {
+// Never is "clearer" than void, it is intended to never return something, where as void means that it doesn't have a return type.
+function generateError(message: string, code: number): never {
   throw { message: message, errorCode: code };
 }
 
-generateError("An error occurred!", 500);
+const result = generateError("An error occurred!", 500);
+console.log(result);
