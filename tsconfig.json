@@ -99,11 +99,13 @@
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
   "exclude": [
-    "node_modules",
-    "analytics.ts",
+    "node_modules", // would be the default if exclude not used
     "objs-arrays-enums.ts",
     "union-aliases.ts",
     "unknown-never.ts",
     "functions.ts"
-  ]
+  ],
+  // "include": ["app.ts", "analytics.ts"] // Opposite of exclude, can contain folders
+
+  // "files": ["app.ts"] // Like include, except cannot put whole folders.
 }
