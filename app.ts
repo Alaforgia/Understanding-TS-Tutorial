@@ -9,5 +9,7 @@ if (typeof userInput === "string") {
 }
 
 function generateError(message: string, code: number) {
-  throw ;
+  throw { message: message, errorCode: code };
 }
+
+generateError("An error occurred!", 500);
